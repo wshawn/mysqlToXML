@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="wsw_zipCode" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM">
+    <object class="Zipcode" table="zipcode" extends="xPDOObject">
+        <field key="id" dbtype="varchar" precision="5" phptype="string" null="false" default="" index="pk" />
+        <field key="city" dbtype="varchar" precision="50" phptype="string" null="true" />
+        <field key="county" dbtype="varchar" precision="50" phptype="string" null="true" />
+        <field key="state_name" dbtype="varchar" precision="40" phptype="string" null="true" />
+        <field key="state_abbrv" dbtype="varchar" precision="2" phptype="string" null="true" />
+        <field key="area_code" dbtype="varchar" precision="3" phptype="string" null="true" />
+        <field key="time_zone" dbtype="varchar" precision="50" phptype="string" null="true" />
+        <field key="lat" dbtype="float" phptype="float" null="false" default="0" />
+        <field key="lon" dbtype="float" phptype="float" null="false" default="0" />
+    </object>
+</model>
